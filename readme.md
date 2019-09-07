@@ -27,8 +27,3 @@ docker exec -it <your docker container name> bash
  http://localhost:8082 </br>
  127.0.0.1:8082
 
-
-
-
-
- https://spring.io/guides/gs/rest-service/
