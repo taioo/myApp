@@ -1,5 +1,11 @@
 # myApp 
 
+Login
+</br>
+username: user
+</br>
+Password: password
+
 ## Docker
 
 ### Setup
@@ -34,6 +40,13 @@ docker exec -it <your docker container name> bash
 # <spring>
 
 ## Spring
+Login
+</br>
+username: user
+</br>
+Password: password
+
+</br>
 
 This gets all data 
 ```GET localhost:8080/user/all ```
