@@ -1587,3 +1587,15 @@ Contains: Missing org.springframework.boot:spring-boot-starter-thymeleaf:jar:jav
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-08 16:53:41.740
 !MESSAGE executing callback sts4.classpath.qOrEVQsx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-08 17:12:31.410
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qOrEVQsx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-08 17:12:31.422
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.qOrEVQsx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-08 17:12:31.422
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-08 17:12:31.423
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qOrEVQsx => OK
