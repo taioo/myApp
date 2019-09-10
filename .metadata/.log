@@ -1963,3 +1963,94 @@ Contains: Missing org.springframework.boot:spring-boot-starter-security:jar:java
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:00:33.752
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.evTbuSXB => OK
+!SESSION 2019-09-09 19:11:42.267 -----------------------------------------------
+eclipse.buildId=4.3.2.201908130627-RELEASE
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_DE
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/thaer/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/thaer/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-09-09 19:11:49.103
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-09 19:11:49.136
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-09-09 19:11:50.091
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-09 19:11:50.091
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@404dc999,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ef85567,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:11:56.752
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:11:56.757
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@301c622d[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=618)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:11:56.759
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:11:56.923
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.214
+!MESSAGE Boot LS startup time from start to initialized: 4440ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.244
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IZAlDntxisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.245
+!MESSAGE subscribing to classpath changes: sts4.classpath.IZAlDntx isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.247
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.250
+!MESSAGE subsribers = {sts4.classpath.IZAlDntx=Send Classpath Notifications(77)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.250
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.257
+!MESSAGE project Spring ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.258
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.258
+!MESSAGE Preparing classpath changed notification Spring
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.258
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IZAlDntx => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.259
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.265
+!MESSAGE classpath=124 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.266
+!MESSAGE buffering callback sts4.classpath.IZAlDntx Spring false 124
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.267
+!MESSAGE executing callback sts4.classpath.IZAlDntx 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.349
+!MESSAGE executing callback sts4.classpath.IZAlDntx SUCCESS [done]

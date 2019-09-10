@@ -73,3 +73,24 @@ The reply should be: [{"id":1,"name":"First","email":"email@email.com"}]
 http://localhost:8080/swagger-ui.html
 ```
 
+OpenUi5
+
+
+file directory: ```myApp/Spring/src/main/openui5```
+
+
+Install all dependencies
+```
+yarn
+```
+
+Start a local server and run the application (http://localhost:8080/index.html)
+```
+ui5 serve -o index.html
+```
+</br>
+
+more info
+```
+https://github.com/SAP/openui5-sample-app
+```
