@@ -73,7 +73,7 @@ The reply should be: [{"id":1,"name":"First","email":"email@email.com"}]
 http://localhost:8080/swagger-ui.html
 ```
 
-OpenUi5
+## OpenUi5
 
 
 file directory: ```myApp/Spring/src/main/openui5```
