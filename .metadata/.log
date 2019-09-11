@@ -2054,3 +2054,18 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 19:12:01.349
 !MESSAGE executing callback sts4.classpath.IZAlDntx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-10 16:07:37.668
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IZAlDntx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-10 16:07:37.669
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.IZAlDntx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-10 16:07:37.669
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-10 16:07:37.670
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IZAlDntx => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-09-10 16:07:38.163
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
