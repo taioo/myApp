@@ -48,13 +48,22 @@ Password: password
 
 </br>
 
+
+
 This gets all data 
 ```GET localhost:8080/user/all ```
 
 This adds one user to the data
 ```POST localhost:8080/user/add```
 
-in terminal
+
+### Postman
+
+```
+https://documenter.getpostman.com/view/1080136/SVmsX1VC?version=latest
+```
+
+### terminal
 ```
 $ curl localhost:8080/user/add -d name=First -d email=email@email.com
 ```
