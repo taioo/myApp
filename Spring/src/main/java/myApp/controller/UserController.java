@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import myApp.model.Role;
 import myApp.model.User;
 import myApp.repository.UserRepository;
 
@@ -19,12 +20,16 @@ public class UserController {
 	private UserRepository userRepository;
 
 	@PostMapping(path="/add") // Map ONLY POST Requests
-	public @ResponseBody String addNewUser (@RequestParam String name
-			, @RequestParam String email , @RequestParam String password) {
+	public @ResponseBody String addNewUser (
+			@RequestParam String name,
+			@RequestParam String email , 
+			@RequestParam String password, 
+			@RequestParam Role role) {
+		
 		// @ResponseBody means the returned String is the response, not a view name
 		// @RequestParam means it is a parameter from the GET or POST request
 
-		User n = new User(name, email ,password);
+		User n = new User(name, email ,password, role);
 		userRepository.save(n);
 		return "Saved";
 	}

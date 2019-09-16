@@ -23,14 +23,15 @@ public class User {
     private String password;
     private boolean enabled = true;
     private Date lastLogin;
+	private Role role;
 
-    private User() {
-    }
+    private User() {}
 
-    public User(String name, String email, String password) {
+    public User(String name, String email, String password, Role role) {
         this.username = email;
         this.name = name;
         this.password = password;
+        this.role=role;
     }
 
     public long getId() {
@@ -80,4 +81,12 @@ public class User {
     public void setLastLogin(Date lastLogin) {
         this.lastLogin = lastLogin;
     }
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
 }
