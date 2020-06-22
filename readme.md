@@ -1,88 +1,95 @@
 # myApp 
 
-Login
-</br>
-username: user
-</br>
-Password: password
 
-## Docker
-
-### Setup
+# Setup
+to define and start containers
 ```
 docker-compose up -d
 ```
-### To Tear Down
+check containers status
+```
+docker container ls
+```
+
+to stop
 ```
 docker-compose down --volumes
 ```
-### Mysql
+<br>
+<br>
 
-```
-docker exec -it <your db docker container name > mysql -uroot -p
-```
+# Mysql
 
-### Enter bash in Docker container
+to enter mysql 
+```
+docker exec -it <your db container name> mysql -u user -p
+```
+Login user
+- username: user
+- Password: password
+
+Login root
+- username: root
+- Password: root
+
+<br>
+
+-- to enter bash in Docker container --
 ```
 docker exec -it <your docker container name> bash 
 ```
 
 
 
-#### mysql 
-0.0.0.0:8081 </br>
-127.0.0.1:8081
-#### phpmyAdmin
- http://localhost:8082 </br>
- 127.0.0.1:8082
+mysql:
+* 0.0.0.0:8081
+* 127.0.0.1:8081
 
+phpmyAdmin:
+ * http://localhost:8082 
+ * 127.0.0.1:8082
 
-# <spring>
+<br>
+<br>
 
-## Spring
-Login
-</br>
-username: user
-</br>
-Password: password
+# Spring
+Login:
+* username: user
+* Password: password
 
-</br>
+## Run Spring
 
+REST: 
+- This gets all data ```GET localhost:8080/user/all ```
 
+- This adds one user to the data ```POST localhost:8080/user/add```
 
-This gets all data 
-```GET localhost:8080/user/all ```
-
-This adds one user to the data
-```POST localhost:8080/user/add```
-
-
-### Postman
-
+# run and test
+* ## terminal
+to run in terminal
 ```
-https://documenter.getpostman.com/view/1080136/SVmsX1VC?version=latest
-```
-
-### terminal
-```
-$ curl localhost:8080/user/add -d name=First -d email=email@email.com
+$ ❯ curl -i --user user:password http://localhost:8080/user/add -d name=John -d email=email@email.com -d password=password -d role=admin
 ```
 The reply should be: Saved
 
-
 ```
-$ curl 'localhost:8080/user/all'
+$ curl -i --user user:password http://localhost:8080/user/all
 ```
-The reply should be: [{"id":1,"name":"First","email":"email@email.com"}]
+The reply should be: [{"id":5,"name":"John","username":"email@email.com","password":"password","enabled":true,"lastLogin":null,"role":"admin"}]
 
-
-
-## Swagger 
+* ## Swagger 
 ```
 http://localhost:8080/swagger-ui.html
 ```
 
-## OpenUi5
+* ## Postman
+```
+https://documenter.getpostman.com/view/1080136/SVmsX1VC?version=latest
+```
+<br>
+<br>
+
+#  OpenUi5
 
 
 file directory: ```myApp/Spring/src/main/openui5```
