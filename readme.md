@@ -11,7 +11,7 @@ check containers status
 docker container ls
 ```
 
-to stop
+Stops containers and removes containers created by up
 ```
 docker-compose down --volumes
 ```
@@ -20,28 +20,20 @@ docker-compose down --volumes
 
 # Mysql
 
-to enter database (myapp_db_1) in docker
+access mysql container (myapp_mysql) in docker
 ```
-docker exec -it myapp_db_1 mysql -u user -p
+docker exec -it myapp_mysql mysql -u user -p
 ```
 Login user
 - username: user
 - Password: password
 
 ### OR 
-
 Login root
 - username: root
 - Password: root
 
 <br>
-
--- to enter bash in Docker container --
-```
-docker exec -it myapp_db_1 bash 
-```
-
-
 
 mysql:
 * 0.0.0.0:8081
@@ -55,22 +47,24 @@ phpmyAdmin:
 <br>
 
 # Spring
-spring admin login:
-* username: user
-* Password: password
 
-## Run Spring
-to run
+navigate to Spring folder
+```
+cd Spring
+```
+
+install & run
 ```
 mvn install && mvn spring-boot:run
 ```
 
+Admin user
+ - username: user
+ - Password: password
+
 REST: 
 - This gets all data ```GET localhost:8080/user/all ```
-
 - This adds one user to the data ```POST localhost:8080/user/add```
-
- ## REST in terminal:
 
 create user:
 ```
@@ -83,7 +77,7 @@ $ curl -i --user user:password http://localhost:8080/user/all
 ```
 The reply should be: [{"id":5,"name":"John","username":"email@email.com","password":"password","enabled":true,"lastLogin":null,"role":"admin"}]
 
-* ## Swagger: 
+ ## Swagger
 ```
 http://localhost:8080/swagger-ui.html
 ```
@@ -93,9 +87,10 @@ http://localhost:8080/swagger-ui.html
 
 #  OpenUi5 // todo
 
-
-
-file directory: ```myApp/Spring/src/main/openui5```
+file directory: 
+```
+cd openui5
+```
 
 
 Install all dependencies
